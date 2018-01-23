@@ -65,7 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |holiday, details|
     string = "#{holiday:}".slice(0, 1).capitalize + "#{holiday:}".slice(1..-1)
-    puts "#{holiday}:".slice(0, 1).capitalize
+    puts string
     holiday.each do |festival, supplies|
       print "#{festival}: "
       supplies.each { |supply| print "#{supply}, " }
