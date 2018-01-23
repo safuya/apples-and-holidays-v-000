@@ -87,6 +87,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts string
     details.each do |festival, supplies|
       string = "#{festival}:".slice(0, 1).capitalize + "#{festival}:".slice(1..-1)
+      string.gsub!(/_y/, " Y")
       string = "  " + string
       supplies.each_with_index do |supply, i|
         if i == 0
