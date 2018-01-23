@@ -85,7 +85,6 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |holiday, details|
     string = "#{holiday}:".slice(0, 1).capitalize + "#{holiday}:".slice(1..-1)
     puts string
-    binding.pry
     details.each do |festival, supplies|
       string = "#{festival}:".slice(0, 1).capitalize + "#{festival}:".slice(1..-1)
       supplies.each_with_index do |supply, i|
