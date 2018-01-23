@@ -1,5 +1,24 @@
 require 'pry'
 
+def test_hash
+  {
+    :winter => {
+      :christmas => ["Lights", "Wreath"],
+      :new_years => ["Party Hats"]
+    },
+    :summer => {
+      :fourth_of_july => ["Fireworks", "BBQ"]
+    },
+    :fall => {
+      :thanksgiving => ["Turkey"]
+    },
+    :spring => {
+      :memorial_day => ["BBQ"]
+    }
+  }
+end
+
+
 def second_supply_for_fourth_of_july(holiday_hash)
   # given that holiday_hash looks like this:
   # {
