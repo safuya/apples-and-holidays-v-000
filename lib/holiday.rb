@@ -87,8 +87,15 @@ def all_supplies_in_holidays(holiday_hash)
     puts string
     binding.pry
     details.each do |festival, supplies|
-      print "#{festival}: "
-      supplies.each { |supply| print "#{supply}, " }
+      string = "#{festival}:"
+      supplies.each_with_index do |supply, i|
+        if i == 0
+          string += " #{supply}"
+        else
+          string += ", #{supply}"
+        end
+      end
+      puts string
     end
   end
 end
